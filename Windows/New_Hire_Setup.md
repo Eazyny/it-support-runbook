@@ -1,8 +1,8 @@
-Goal
+# Goal
 
 Get the new hire productive Day 1, with proper access, security, and clean documentation.
 
-Step 1 — Intake checklist (from HR/manager)
+## Step 1 — Intake checklist (from HR/manager)
 
 You need:
 
@@ -34,7 +34,7 @@ Headset
 
 Security keys (if used)
 
-Step 2 — Create the AD user (ADUC)
+## Step 2 — Create the AD user (ADUC)
 
 Open ADUC → navigate to the correct Users OU
 
@@ -62,7 +62,7 @@ Title, Department, Manager
 
 Office, phone (if you use it)
 
-Step 3 — Add group memberships (access)
+## Step 3 — Add group memberships (access)
 
 In user Properties → Member Of
 
@@ -78,7 +78,7 @@ Email distribution lists (if group-based)
 
 Best practice: use role-based groups (not manual folder permissions per user).
 
-Step 4 — Create mailbox / M365 account (GUI flow depends on setup)
+## Step 4 — Create mailbox / M365 account (GUI flow depends on setup)
 
 This varies by org (Hybrid/Entra ID). In many environments you’ll:
 
@@ -90,7 +90,7 @@ Ensure they can sign into email
 
 Ensure MFA enrollment (if required)
 
-Step 5 — Provision the computer
+## Step 5 — Provision the computer
 If using Autopilot/Intune (modern)
 
 Assign device to user
@@ -119,7 +119,7 @@ Security agent
 
 Printer mapping (if needed)
 
-Step 6 — Verify core access (don’t skip)
+## Step 6 — Verify core access (don’t skip)
 
 Log in with user (or have them log in) and validate:
 
@@ -135,7 +135,7 @@ VPN works (if remote)
 
 This is where you catch missing groups early.
 
-Step 7 — Onboarding handoff (quick user orientation)
+## Step 7 — Onboarding handoff (quick user orientation)
 
 Give them:
 
@@ -151,7 +151,7 @@ VPN rules
 
 where to find guides/runbooks
 
-Step 8 — Document everything (ticket closeout)
+## Step 8 — Document everything (ticket closeout)
 
 Include:
 
