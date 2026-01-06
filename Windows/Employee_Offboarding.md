@@ -44,7 +44,7 @@ Open: **Server Manager → Tools → Active Directory Users and Computers**
 
 ---
 
-## 3) Reset password (optional but recommended for high-risk exits)
+## 3) Reset password
 In **ADUC**:
 1. Right-click user → **Reset Password**
 2. Set a strong random password
