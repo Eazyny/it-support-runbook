@@ -40,7 +40,7 @@ Open ADUC → navigate to the correct Users OU
 
 Right-click OU → New → User
 
-Fill in:
+### Fill in:
 
 First / Last
 
@@ -52,7 +52,7 @@ Check User must change password at next logon
 
 Finish
 
-Then:
+### Then:
 
 Open user Properties
 
@@ -66,7 +66,7 @@ Office, phone (if you use it)
 
 In user Properties → Member Of
 
-Add baseline groups (example):
+### Add baseline groups (example):
 
 All Employees
 
@@ -76,7 +76,7 @@ Shared drive access groups
 
 Email distribution lists (if group-based)
 
-Best practice: use role-based groups (not manual folder permissions per user).
+### Best practice: use role-based groups (not manual folder permissions per user).
 
 ## Step 4 — Create mailbox / M365 account (GUI flow depends on setup)
 
@@ -84,7 +84,7 @@ This varies by org (Hybrid/Entra ID). In many environments you’ll:
 
 Create in AD → sync to M365 → assign license in Admin Center
 
-Checklist:
+### Checklist:
 
 Ensure they can sign into email
 
@@ -107,7 +107,7 @@ Join domain (or enroll in Intune)
 
 Ensure hostname naming standard
 
-Install baseline apps:
+### Install baseline apps:
 
 Browser, PDF reader
 
@@ -137,13 +137,13 @@ This is where you catch missing groups early.
 
 ## Step 7 — Onboarding handoff (quick user orientation)
 
-Give them:
+### Give them:
 
 How to contact IT (portal/email/phone)
 
 Password/MFA expectations
 
-Common fixes:
+### Common fixes:
 
 reboot
 
@@ -153,7 +153,7 @@ where to find guides/runbooks
 
 ## Step 8 — Document everything (ticket closeout)
 
-Include:
+### Include:
 
 Account created (username)
 
