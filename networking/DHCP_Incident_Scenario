@@ -1,4 +1,3 @@
-# DHCP Scope Full Playbook (Windows Server)  
 **Scenario:** Users can’t get an IP / intermittent connectivity. DHCP clients show APIPA `169.254.x.x`, or leases fail because the scope is exhausted.  
 **Goal:** Restore reliable leasing fast, prevent recurrence, and document clearly.
 
