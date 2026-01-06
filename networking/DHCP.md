@@ -224,7 +224,7 @@ After changes:
 
 ---
 
-## 8) Ticket Notes Template (copy/paste)
+## 8) Ticket Notes Template
 
 When you close the ticket, log:
 
