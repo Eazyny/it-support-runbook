@@ -4,7 +4,7 @@ Get the new hire productive Day 1, with proper access, security, and clean docum
 
 ## Step 1 — Intake checklist (from HR/manager)
 
-You need:
+### You need:
 
 Full name (legal + preferred)
 
@@ -14,7 +14,7 @@ Role + department
 
 Manager name
 
-Required access:
+### Required access:
 
 Email distribution lists
 
@@ -24,7 +24,7 @@ Apps (CRM, ticketing, M365, etc.)
 
 Any special groups (Finance, Admin, etc.)
 
-Hardware needs:
+### Hardware needs:
 
 Laptop/desktop
 
