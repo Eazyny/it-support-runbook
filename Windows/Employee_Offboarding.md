@@ -30,7 +30,7 @@ Open a ticket checklist with:
 
 ---
 
-## 2) Disable sign-in (fastest win)
+## 2) Disable sign-in
 ### Active Directory (ADUC)
 Open: **Server Manager → Tools → Active Directory Users and Computers**
 
