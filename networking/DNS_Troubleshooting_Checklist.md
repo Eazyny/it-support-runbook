@@ -1,5 +1,3 @@
-# DNS Troubleshooting Checklist (Help Desk)
-
 ## Quick Checks
 - Confirm the device has an IP address (`ipconfig` / `ip a`)
 - Ping the gateway/router
