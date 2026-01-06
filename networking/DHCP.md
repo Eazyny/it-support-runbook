@@ -1,4 +1,3 @@
-````md
 # DHCP Runbook (IT Support / Help Desk)
 
 ## Purpose
