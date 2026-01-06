@@ -1,4 +1,4 @@
-0) Quick “is this DHCP?” check (client-side)
+## 0) Quick “is this DHCP?” check (client-side)
 
 On an affected PC, confirm whether it’s failing to get a lease.
 
@@ -35,7 +35,7 @@ What “good” looks like:
 
 Renew succeeds quickly and you get a valid IP + gateway.
 
-1) Confirm DHCP service is up (server-side)
+## 1) Confirm DHCP service is up (server-side)
 
 On the DHCP server:
 
@@ -50,7 +50,7 @@ If it’s not running (or acting weird), restart:
 
 Restart-Service dhcpserver
 
-2) Identify the scope + check if it’s actually exhausted
+## 2) Identify the scope + check if it’s actually exhausted
 
 List scopes:
 
@@ -74,7 +74,7 @@ Free = 0 or very low
 
 In Use ~ 99–100%
 
-3) Look for what’s eating the pool (leases)
+## 3) Look for what’s eating the pool (leases)
 
 Pull leases for the scope:
 
@@ -100,7 +100,7 @@ Tons of random hostnames / MACs (guest phones, IoT explosion)
 
 Leases that look ancient or never rotating
 
-4) Fast “stop the bleeding” fix (temporary): shorten lease duration
+## 4) Fast “stop the bleeding” fix (temporary): shorten lease duration
 
 This helps addresses recycle faster without deleting anything.
 
@@ -122,7 +122,7 @@ Pool slowly recovers as old leases churn.
 
 Note: Later, set it back to something sane (like 8–24 hours depending on your environment).
 
-5) Free up IPs: remove clearly stale leases (carefully)
+## 5) Free up IPs: remove clearly stale leases (carefully)
 
 Only do this if you’re confident the leases are not active.
 Start by filtering to expired leases if you’re tracking those, otherwise you’ll do this based on LeaseExpiryTime patterns.
@@ -140,7 +140,7 @@ You free some space.
 
 The next affected client can renew successfully.
 
-6) Expand capacity: widen the available range (if subnet allows)
+## 6) Expand capacity: widen the available range (if subnet allows)
 
 First, confirm your start/end range and subnet mask:
 
@@ -159,7 +159,7 @@ Remove-DhcpServerv4ExclusionRange -ComputerName <DHCP-SERVER> -ScopeId <SCOPE-ID
 
 If your scope range can be expanded (and you have free IP space in that subnet), you’d typically adjust scope start/end in the GUI. (PowerShell can do it too, but the cmdlets vary depending on how your scope is defined — so I keep this part “safe” unless you want the exact command for your server version.)
 
-7) Validate DHCP options (gateway/DNS) so leases are usable
+## 7) Validate DHCP options (gateway/DNS) so leases are usable
 
 Check scope options:
 
@@ -185,7 +185,7 @@ What “good” looks like:
 
 Clients can resolve internal names and reach the gateway right after renewal.
 
-8) Confirm the fix on 2–3 clients
+## 8) Confirm the fix on 2–3 clients
 
 On clients:
 
